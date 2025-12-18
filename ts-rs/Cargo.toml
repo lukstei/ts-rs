@@ -20,6 +20,7 @@ rust-version = "1.78.0"
 [features]
 default = ["serde-compat"]
 
+fastnum-impl = ["fastnum"]
 chrono-impl = ["chrono"]
 bigdecimal-impl = ["bigdecimal"]
 uuid-impl = ["uuid"]
@@ -58,6 +59,7 @@ bson = { version = "2", optional = true }
 bytes = { version = "1", optional = true }
 url = { version = "2", optional = true }
 semver = { version = "1", optional = true }
+fastnum = { version = "0.7", optional = true }
 smol_str = { version = "0.3", optional = true }
 indexmap = { version = "2", optional = true }
 ordered-float = { version = ">= 3, < 6", optional = true }
