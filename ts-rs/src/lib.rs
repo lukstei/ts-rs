@@ -1138,6 +1138,9 @@ impl_primitives! { semver::Version => "string" }
 #[cfg(feature = "fastnum-impl")]
 impl_primitives! { fastnum::D128 => "string" }
 
+#[cfg(feature = "primitive_fixed_point_decimal-impl")]
+impl_primitives! { primitive_fixed_point_decimal::ConstScaleFpdec<i64, 4> => "string" }
+
 #[cfg(feature = "bytes-impl")]
 mod bytes {
     use super::TS;
