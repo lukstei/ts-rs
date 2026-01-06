@@ -143,6 +143,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "bnum"
+version = "0.12.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f781dba93de3a5ef6dc5b17c9958b208f6f3f021623b360fb605ea51ce443f10"
+
+[[package]]
 name = "borsh"
 version = "1.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -437,6 +443,17 @@ dependencies = [
  "serde",
  "ts-rs",
  "uuid",
+]
+
+[[package]]
+name = "fastnum"
+version = "0.7.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4089ab2dfd45d8ddc92febb5ca80644389d5ebb954f40231274a3f18341762e2"
+dependencies = [
+ "bnum",
+ "num-integer",
+ "num-traits",
 ]
 
 [[package]]
@@ -971,6 +988,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "primitive_fixed_point_decimal"
+version = "1.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "964a1547e66ee00d6f965232eb4228dc4b3ce4d999413b3b055ce710291ae145"
+dependencies = [
+ "num-traits",
+ "serde",
+]
+
+[[package]]
 name = "proc-macro2"
 version = "1.0.92"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1502,10 +1529,12 @@ dependencies = [
  "bytes",
  "chrono",
  "dprint-plugin-typescript",
+ "fastnum",
  "heapless",
  "indexmap",
  "jiff",
  "ordered-float",
+ "primitive_fixed_point_decimal",
  "semver",
  "serde",
  "serde_json",
